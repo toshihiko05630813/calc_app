@@ -15,12 +15,13 @@ class CalcController extends Controller
             $result  = $value1 - $value2;
         } elseif ($operator === 'multiplication') {
             $result  = $value1 * $value2;
-        } else {
+        } elseif ($operator === 'division') {
             $result  = $value1 / $value2;
+        } else {
+            $result  = "";
         }
         return view('message.keisan', [
             'result' => $result,
-            'value1, operator, value2'
         ]);
     }
 }

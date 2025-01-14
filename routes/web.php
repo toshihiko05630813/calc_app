@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\CalcController;
-use Brick\Math\Internal\Calculator;
+use Brick\Math\Internal;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
